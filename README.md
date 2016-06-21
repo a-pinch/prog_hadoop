@@ -1,1 +1,1 @@
-ke exercises of Hadoop from Stepic
+make exercises of Hadoop from Stepic
