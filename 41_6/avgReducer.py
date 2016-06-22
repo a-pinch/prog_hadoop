@@ -10,9 +10,9 @@ for line in sys.stdin:
         sum = sum + int(l[1])
         cnt = cnt + 1
     else:
-        if oldKey: print(oldKey+"\t"+str(sum/cnt))
+        if oldKey: print(oldKey+"\t"+str(int(sum/cnt)))
         oldKey = l[0]
         sum = int(l[1])
         cnt = 1
-if oldKey: print(oldKey+"\t"+str(sum/cnt))
+if oldKey: print(oldKey+"\t"+str(int(sum/cnt)))
        
