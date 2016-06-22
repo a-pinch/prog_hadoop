@@ -1,9 +1,13 @@
 #! /usr/bin/python3
 import sys
 
-oldKey = ''
+H= {}
+oldLine = ''
 for line in sys.stdin:
-    key = line.strip().split("\t")[0]
-    if(key != oldKey):
-        print(key)
-        oldKey = key
+    if(line != oldLine):
+        oldLine = line
+        key = line.strip().split("\t")[1]
+        if(key in H): H[key] = H[key] + 1
+        else: H[key] = 1
+for k,v in H.items():
+    print(k+"\t"+str(v))
