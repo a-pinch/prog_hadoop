@@ -9,4 +9,4 @@ for line in sys.stdin:
             if(i != j): 
                 if(j in H): H[j] = H[j] + 1
                 else: H[j] = 1
-        print(i+"\t"+", ".join(k+":"+str(v) for k,v in H.items()))
+        print(i+"\t"+",".join(k+":"+str(v) for k,v in H.items()))
