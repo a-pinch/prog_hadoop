@@ -2,11 +2,17 @@
 import sys
 
 H = {}
-
+oldKey = ''
+sum=cnt=0
 for line in sys.stdin:
-    for token in line.strip().split(" "):        
-        if token: 
-            if token in H: H[token] = H[token] + 1
-            else: H[token] = 1
-for k,v in H.items():        
-    print(k + "\t" +str(v))
+    l = line.strip().split("\t")
+    if l[0] == oldKey:
+        sum = sum + int(l[1])
+        cnt = cnt + 1
+    else:
+        if oldKey: print(oldKey+"\t"+str(sum/cnt))
+        oldKey = l[0]
+        sum = int(l[1])
+        cnt = 1
+if oldKey: print(oldKey+"\t"+str(sum/cnt))
+       
