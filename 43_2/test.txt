@@ -1,7 +1,3 @@
-user1   query:гугл
-user1   url:google.ru
-user2   query:стэпик
-user2   query:стэпик курсы
-user2   url:stepic.org
-user2   url:stepic.org/explore/courses
-user3   query:вконтакте
+1:aut Caesar aut nihil
+1:aut aut
+2:de mortuis aut bene aut nihil
