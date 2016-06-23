@@ -1,3 +1,7 @@
+1:a::b
+1:a:::b
+1::a:b:c
+1: test:test test   test
 1:aut Caes:ar aut nihil
 1:aut aut
 2:de mor,tuis aut bene aut nihil

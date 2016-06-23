@@ -3,6 +3,7 @@ import sys,re
 
 for line in sys.stdin:
     l = line.strip().split(":",1) 
-    for w in re.compile("\W").split(l[1]):
-        print(w+"#"+l[0]+"\t1")
+    r = re.compile("\W+")
+    for w in r.split(l[1]):
+        if(w):  print(w+"#"+l[0]+"\t1")
     
