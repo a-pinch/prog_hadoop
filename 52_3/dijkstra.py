@@ -5,7 +5,7 @@ def getMinEdge(q, d, w):
     "find short way to q edge"
     m = -1
     for c,k in d.items():
-        if(w[(c,q)]):
+        if((c,q) in w):
             if(m < 0):
                 m = k+w[(c,q)]
             else:
