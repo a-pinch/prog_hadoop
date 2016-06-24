@@ -6,4 +6,4 @@ for line in sys.stdin:
     print(line,end="")
     l = line.strip().split() 
     for e in r.split(l[2]):
-        if(e): print(e+"\t"+(str(int(l[1])+1) if isinstance(l[1],int) else l[1])+"\t{}")
+        if(e): print(e+"\t"+(str(int(l[1])+1) if l[1].isdigit() else l[1])+"\t{}")
